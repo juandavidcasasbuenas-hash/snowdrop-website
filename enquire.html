@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Retailer | Snow Drop Carbon Shoe Chargers</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">❄</span>
+                <span class="logo-text">Snow Drop</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#science">The Science</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#testimonials">Athletes</a></li>
+                <li><a href="enquire.html" class="btn-nav active">Enquire Now</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="enquire-hero">
+        <div class="container">
+            <div class="enquire-header">
+                <span class="section-tag">Find a Retailer</span>
+                <h1>Get Your Snow Drop Charger</h1>
+                <p>Enter your details below and we'll connect you with authorized retailers in your area. Our specialist partners can also provide personalized advice on optimizing your carbon plate recovery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="enquire-section">
+        <div class="container">
+            <div class="enquire-grid">
+                <div class="enquire-form-container">
+                    <form id="enquiry-form" class="enquire-form">
+                        <div class="form-section">
+                            <h3>Your Information</h3>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Optional">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Your Location</h3>
+
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select your country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="FR">France</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postalCode">Postal/ZIP Code *</label>
+                                    <input type="text" id="postalCode" name="postalCode" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Your Running Profile</h3>
+
+                            <div class="form-group">
+                                <label for="runningLevel">Running Level *</label>
+                                <select id="runningLevel" name="runningLevel" required>
+                                    <option value="">Select your level</option>
+                                    <option value="elite">Elite / Professional</option>
+                                    <option value="competitive">Competitive Amateur</option>
+                                    <option value="recreational">Recreational Runner</option>
+                                    <option value="coach">Coach / Team Manager</option>
+                                    <option value="store">Running Store Owner</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="weeklyMileage">Weekly Mileage</label>
+                                <select id="weeklyMileage" name="weeklyMileage">
+                                    <option value="">Select your typical weekly mileage</option>
+                                    <option value="0-20">0-20 miles</option>
+                                    <option value="20-40">20-40 miles</option>
+                                    <option value="40-60">40-60 miles</option>
+                                    <option value="60-80">60-80 miles</option>
+                                    <option value="80+">80+ miles</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Current Carbon Plate Shoes (select all that apply)</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="nike-vaporfly">
+                                        <span class="checkmark"></span>
+                                        Nike Vaporfly
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="nike-alphafly">
+                                        <span class="checkmark"></span>
+                                        Nike Alphafly
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="adidas-adios">
+                                        <span class="checkmark"></span>
+                                        Adidas Adios Pro
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="saucony-endorphin">
+                                        <span class="checkmark"></span>
+                                        Saucony Endorphin Pro
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="asics-metaspeed">
+                                        <span class="checkmark"></span>
+                                        ASICS Metaspeed
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="hoka-rocket">
+                                        <span class="checkmark"></span>
+                                        Hoka Rocket X
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="new-balance-fuelcell">
+                                        <span class="checkmark"></span>
+                                        New Balance FuelCell
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="shoes" value="other">
+                                        <span class="checkmark"></span>
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Your Interest</h3>
+
+                            <div class="form-group">
+                                <label for="interest">What brings you to Snow Drop? *</label>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Select your primary interest</option>
+                                    <option value="personal">Personal use - extend shoe lifespan</option>
+                                    <option value="performance">Personal use - maximize race performance</option>
+                                    <option value="team">Team/club purchase</option>
+                                    <option value="retail">Retail partnership inquiry</option>
+                                    <option value="curious">Just curious about the technology</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Additional Comments</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Any specific questions or requirements?"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label consent-label">
+                                    <input type="checkbox" name="consent" required>
+                                    <span class="checkmark"></span>
+                                    I agree to receive communications from Snow Drop about products, retailers, and carbon plate technology updates. *
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <span class="btn-text">Find Retailers Near Me</span>
+                            <span class="btn-loading">
+                                <span class="spinner"></span>
+                                Processing...
+                            </span>
+                        </button>
+                    </form>
+
+                    <div id="form-success" class="form-success hidden">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>We've received your enquiry and will connect you with authorized Snow Drop retailers in your area within 24-48 hours.</p>
+                        <p>In the meantime, check your email for our Carbon Plate Care Guide — packed with tips to maximize your shoes' performance between charges.</p>
+                        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                    </div>
+                </div>
+
+                <div class="enquire-sidebar">
+                    <div class="sidebar-card">
+                        <h4>Why Buy from Authorized Retailers?</h4>
+                        <ul class="benefit-list">
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <span>Full 2-year warranty coverage</span>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <span>Expert setup and calibration</span>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <span>Access to Snow Drop Connect app</span>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <span>Free firmware updates</span>
+                            </li>
+                            <li>
+                                <span class="benefit-icon">✓</span>
+                                <span>Dedicated customer support</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h4>Current Availability</h4>
+                        <p>Snow Drop Chargers are currently available in:</p>
+                        <div class="availability-list">
+                            <span class="available">United States</span>
+                            <span class="available">Canada</span>
+                            <span class="available">United Kingdom</span>
+                            <span class="available">Germany</span>
+                            <span class="available">Australia</span>
+                            <span class="available">Japan</span>
+                            <span class="coming-soon">France (Coming Soon)</span>
+                            <span class="coming-soon">Kenya (Coming Soon)</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h4>Pricing</h4>
+                        <div class="price-display">
+                            <span class="price">$349</span>
+                            <span class="price-note">MSRP</span>
+                        </div>
+                        <p class="price-detail">Includes charger unit, dual charging bay, power adapter, and 1-year Snow Drop Connect subscription.</p>
+                    </div>
+
+                    <div class="sidebar-card contact-card">
+                        <h4>Direct Contact</h4>
+                        <p>Prefer to speak with us directly?</p>
+                        <div class="contact-info">
+                            <p><strong>Email:</strong> hello@snowdrop.tech</p>
+                            <p><strong>Phone:</strong> +1 (888) 555-SNOW</p>
+                            <p><strong>Hours:</strong> Mon-Fri, 9am-6pm EST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">❄</span>
+                        <span class="logo-text">Snow Drop</span>
+                    </a>
+                    <p>Pioneering carbon recovery technology for the world's fastest athletes.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="index.html#science">The Science</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="#">Specifications</a></li>
+                        <li><a href="#">Compatibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="enquire.html">Find Retailers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Snow Drop Technologies. All rights reserved.</p>
+                <p class="disclaimer">*Results may vary. Carbon recovery rates based on laboratory testing conditions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

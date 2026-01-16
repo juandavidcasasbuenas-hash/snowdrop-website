@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export NANO_BANANA_API_KEY=\"AIzaSyCUs2NR6xFjLkREtyL8AegHL39OyMhBwh8\")",
+      "Bash(NANO_BANANA_API_KEY=\"AIzaSyCUs2NR6xFjLkREtyL8AegHL39OyMhBwh8\" python3:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(pip show:*)",
+      "Bash(/opt/homebrew/opt/python@3.10/bin/python3.10 -m pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(pip3 show:*)",
+      "Bash(python3.12 -c \"\nfrom nano_banana_helper import configure_nano_banana, generate_image\n\n# Configure with API key  \nconfigure_nano_banana\\(''AIzaSyCUs2NR6xFjLkREtyL8AegHL39OyMhBwh8''\\)\n\n# Generate a test image\nimg_data = generate_image\\(\n    prompt=''A cute cartoon banana wearing sunglasses, digital art style'',\n    output_path=''test_image.png''\n\\)\n\nif img_data:\n    print\\(f''Success! Image size: {len\\(img_data\\)} bytes''\\)\nelse:\n    print\\(''Failed to generate image''\\)\n\")",
+      "WebSearch",
+      "WebFetch(domain:ai.google.dev)",
+      "Bash(python3.12 -c \"\nfrom nano_banana_helper import configure_nano_banana, generate_image\n\nconfigure_nano_banana\\(''AIzaSyCUs2NR6xFjLkREtyL8AegHL39OyMhBwh8''\\)\n\n# Product image - sleek charger device\nprompt = ''''''A sleek, premium carbon fiber shoe charger device called ''Snow Drop''. \nModern minimalist design with a dark charcoal/black body and a glowing cyan LED slot where shoes would sit.\nThe device has soft cyan and purple ambient lighting effects around it.\nProduct photography style, dark background, dramatic lighting, high-end tech aesthetic.\nClean professional product shot, no text or labels.''''''\n\nimg_data = generate_image\\(\n    prompt=prompt,\n    output_path=''images/product_charger.png''\n\\)\n\nif img_data:\n    print\\(f''Product image generated: {len\\(img_data\\)} bytes''\\)\nelse:\n    print\\(''Failed to generate product image''\\)\n\")",
+      "Bash(python3.12:*)",
+      "Bash(python generate_icons.py:*)",
+      "Bash(for f in icon_*.png)",
+      "Bash(do rembg i \"$f\" \"$f\")",
+      "Bash(done)",
+      "Bash(python -c \"\nimport os\nfrom pathlib import Path\n\nos.environ[''NANO_BANANA_API_KEY''] = ''AIzaSyCUs2NR6xFjLkREtyL8AegHL39OyMhBwh8''\n\nfrom google.genai import Client, types\n\nclient = Client\\(api_key=os.environ[''NANO_BANANA_API_KEY'']\\)\n\nresponse = client.models.generate_content\\(\n    model=''gemini-2.5-flash-image'',\n    contents=[''A minimal 32x32 pixel favicon of a simple snowflake. Cyan \\(#00E5FF\\) to purple \\(#A855F7\\) gradient. Clean geometric 6-pointed snowflake design on white background. Very simple, minimal details, suitable for tiny favicon size.''],\n    config=types.GenerateContentConfig\\(\n        temperature=0.7,\n        response_modalities=[''TEXT'', ''IMAGE''],\n    \\),\n\\)\n\nfor part in response.parts:\n    if part.inline_data is not None:\n        Path\\(''favicon.png''\\).write_bytes\\(part.inline_data.data\\)\n        print\\(''PNG Favicon generated!''\\)\n        break\n\")",
+      "Bash(rembg i:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
